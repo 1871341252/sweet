@@ -1,0 +1,119 @@
+{
+  "e2bc8aa7002f6d8803b32cbe78c4eec9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "76b9a85aa17c9537",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625650402791,
+        "stop" : 1625650402791,
+        "duration" : 0
+      }
+    } ]
+  },
+  "6cc5787f4a64dc7892761e23c45b0faf" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c7ae2bf0826a339b",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 无条件跳过",
+      "time" : {
+        "start" : 1625650402795,
+        "stop" : 1625650402795,
+        "duration" : 0
+      }
+    } ]
+  },
+  "b37571e80529caee655bf69e7639c056" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1617a120e20abee",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 元素的text值与数据库一致即用例通过\nassert '410的房间' == 410\n  +'410的房间'\n  -410",
+      "time" : {
+        "start" : 1625650254387,
+        "stop" : 1625650402754,
+        "duration" : 148367
+      }
+    } ]
+  },
+  "706a43fd90e7ee5490a16e30d1df1fcd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bc4f0a7dbc021502",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 已成年",
+      "time" : {
+        "start" : 1625650254384,
+        "stop" : 1625650254384,
+        "duration" : 0
+      }
+    } ]
+  },
+  "0442295f0f88a8f022d014ced24fa65a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dda26641e1ab1817",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625650402793,
+        "stop" : 1625650402794,
+        "duration" : 1
+      }
+    } ]
+  },
+  "c2592d77d169e209beff0b61b9540acb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7dd4a05d87d588bc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625650402797,
+        "stop" : 1625650402797,
+        "duration" : 0
+      }
+    } ]
+  }
+}

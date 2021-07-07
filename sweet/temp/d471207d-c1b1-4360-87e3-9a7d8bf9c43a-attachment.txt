@@ -1,0 +1,15 @@
+[32mINFO    [0m root:test_party.py:19 进入派对
+[32mINFO    [0m root:test_party.py:21 切换点唱
+[32mINFO    [0m root:test_party.py:24 进入房间
+[32mINFO    [0m root:test_party.py:26 上一号麦
+[32mINFO    [0m root:test_party.py:28 拉起表情栏
+[32mINFO    [0m root:test_party.py:30 发送表情
+[32mINFO    [0m root:test_party.py:32 拉起礼物栏
+[32mINFO    [0m root:test_party.py:34 选择送礼物的对象
+[32mINFO    [0m root:test_party.py:36 选择礼物
+[32mINFO    [0m root:test_party.py:38 赠送礼物
+[32mINFO    [0m root:test_party.py:40 下麦
+[32mINFO    [0m root:test_party.py:42 拉起消息框
+[32mINFO    [0m root:test_party.py:45 输入消息文本
+[32mINFO    [0m root:test_party.py:47 发送消息
+[32mINFO    [0m root:test_party.py:54 退出App

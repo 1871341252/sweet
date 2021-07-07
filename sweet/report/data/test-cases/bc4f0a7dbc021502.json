@@ -1,0 +1,67 @@
+{
+  "uid" : "bc4f0a7dbc021502",
+  "name" : "test_02_demo2",
+  "fullName" : "cases.test_demo.TestCases#test_02_demo2",
+  "historyId" : "706a43fd90e7ee5490a16e30d1df1fcd",
+  "time" : {
+    "start" : 1625650254384,
+    "stop" : 1625650254384,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Skipped: 已成年",
+  "statusTrace" : "('C:\\\\pyapp\\\\tapp\\\\cases\\\\test_demo.py', 16, 'Skipped: 已成年')",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.skipif(True, reason='已成年')"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=1)"
+  }, {
+    "name" : "tag",
+    "value" : "dog"
+  }, {
+    "name" : "parentSuite",
+    "value" : "cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_demo"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MLECP88"
+  }, {
+    "name" : "thread",
+    "value" : "19004-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "cases.test_demo"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=1)", "dog", "@pytest.mark.skipif(True, reason='已成年')" ]
+  },
+  "source" : "bc4f0a7dbc021502.json",
+  "parameterValues" : [ ]
+}

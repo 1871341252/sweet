@@ -1,0 +1,67 @@
+{
+  "uid" : "c7ae2bf0826a339b",
+  "name" : "test_05_demo1",
+  "fullName" : "cases.test_demo.TestCases#test_05_demo1",
+  "historyId" : "6cc5787f4a64dc7892761e23c45b0faf",
+  "time" : {
+    "start" : 1625650402795,
+    "stop" : 1625650402795,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Skipped: 无条件跳过",
+  "statusTrace" : "('C:\\\\pyapp\\\\tapp\\\\cases\\\\test_demo.py', 35, 'Skipped: 无条件跳过')",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.skip(reason='无条件跳过')"
+  }, {
+    "name" : "tag",
+    "value" : "cat"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=4)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_demo"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MLECP88"
+  }, {
+    "name" : "thread",
+    "value" : "19004-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "cases.test_demo"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=4)", "@pytest.mark.skip(reason='无条件跳过')", "cat" ]
+  },
+  "source" : "c7ae2bf0826a339b.json",
+  "parameterValues" : [ ]
+}

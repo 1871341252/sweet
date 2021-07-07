@@ -1,0 +1,103 @@
+{
+  "uid" : "1617a120e20abee",
+  "name" : "进入派对操作",
+  "fullName" : "cases.test_party.TestCases#test_01_demo",
+  "historyId" : "b37571e80529caee655bf69e7639c056",
+  "time" : {
+    "start" : 1625650254387,
+    "stop" : 1625650402754,
+    "duration" : 148367
+  },
+  "description" : "派对房间内发消息，送礼物，上麦，下麦，发表情等",
+  "descriptionHtml" : "<p>派对房间内发消息，送礼物，上麦，下麦，发表情等</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 元素的text值与数据库一致即用例通过\nassert '410的房间' == 410\n  +'410的房间'\n  -410",
+  "statusTrace" : "self = <cases.test_party.TestCases object at 0x000002193E2D3F60>\n\n    @pytest.mark.run(order=1)\n    @allure.step(title=\"派对房间发送快捷消息的方法\")\n    @allure.title(\"进入派对操作\")\n    def test_01_demo(self):\n        \"\"\"派对房间内发消息，送礼物，上麦，下麦，发表情等\"\"\"\n        public=run.wait(30)\n        step2=run.clicking(\"xpath\",'/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.RelativeLayout[2]/android.widget.RelativeLayout/android.widget.ImageView')\n        logging.info(\"进入派对\")\n        step3=run.clicking(\"xpath\",'/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/androidx.viewpager.widget.ViewPager/android.widget.RelativeLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.RelativeLayout[5]/android.widget.TextView')\n        logging.info(\"切换点唱\")\n        # step4=run.clicking(\"xpath\",'/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/androidx.viewpager.widget.ViewPager/android.widget.RelativeLayout/androidx.viewpager.widget.ViewPager/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[2]/android.widget.RelativeLayout[2]')\n        step4=run.clicking(\"id\",\"com.yuyin.live.voice:id/llRoot\")\n        logging,info(\"进入房间\")\n        step6=run.clicking(\"xpath\",'/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/androidx.viewpager.widget.ViewPager/android.widget.RelativeLayout/android.widget.RelativeLayout[2]/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[1]/android.widget.RelativeLayout/android.widget.ImageView')\n        logging,info(\"上一号麦\")\n        step7=run.clicking(\"id\",\"com.yuyin.live.voice:id/ivEmotion\")\n        logging.info(\"拉起表情栏\")\n        step8=run.clicking(\"xpath\",'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[1]/android.widget.ImageView')\n        logging.info(\"发送表情\")\n        step9=run.clicking(\"id\",\"com.yuyin.live.voice:id/mIvGift\")\n        logging,info(\"拉起礼物栏\")\n        step10=run.clicking(\"id\",\"com.yuyin.live.voice:id/mIvImg\")\n        logging,info(\"选择送礼物的对象\")\n        step11=run.clicking(\"xpath\",'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RelativeLayout[2]/android.widget.RelativeLayout/androidx.viewpager.widget.ViewPager/android.widget.LinearLayout/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[4]/android.widget.ImageView')\n        logging,info(\"选择礼物\")\n        step12=run.clicking(\"id\",\"com.yuyin.live.voice:id/mTvSend\")\n        logging,info(\"赠送礼物\")\n        step13=run.clicking(\"id\",\"com.yuyin.live.voice:id/mRlGoMic\")\n        logging.info(\"下麦\")\n        step14=run.clicking(\"id\",'com.yuyin.live.voice:id/mIvPublicChat')\n        logging.info(\"拉起消息框\")\n        step15=run.clicking(\"id\",\"com.yuyin.live.voice:id/mEtContent\")\n        step16=run.input_text(\"id\",\"com.yuyin.live.voice:id/mEtContent\",\"以爱之名\")\n        logging.info(\"输入消息文本\")\n        step17=run.clicking(\"id\",\"com.yuyin.live.voice:id/mTvSend\")\n        logging.info(\"发送消息\")\n        step18=run.assert_text(\"xpath\",'/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[1]/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.LinearLayout[1]/android.widget.TextView[3]')\n        # print(step18)\n        temp=db.query(\"SELECT * FROM room WHERE room_id =168\")\n        res=temp[0][2]\n        # sleep=run.wait_sleep(5)\n        end=run.quit_app()\n        logging.info(\"退出App\")\n>       assert step18 == res,\"元素的text值与数据库一致即用例通过\"\nE       AssertionError: 元素的text值与数据库一致即用例通过\nE       assert '410的房间' == 410\nE         +'410的房间'\nE         -410\n\ncases\\test_party.py:55: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "派对房间内发消息，送礼物，上麦，下麦，发表情等",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: 元素的text值与数据库一致即用例通过\nassert '410的房间' == 410\n  +'410的房间'\n  -410",
+    "statusTrace" : "self = <cases.test_party.TestCases object at 0x000002193E2D3F60>\n\n    @pytest.mark.run(order=1)\n    @allure.step(title=\"派对房间发送快捷消息的方法\")\n    @allure.title(\"进入派对操作\")\n    def test_01_demo(self):\n        \"\"\"派对房间内发消息，送礼物，上麦，下麦，发表情等\"\"\"\n        public=run.wait(30)\n        step2=run.clicking(\"xpath\",'/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.RelativeLayout[2]/android.widget.RelativeLayout/android.widget.ImageView')\n        logging.info(\"进入派对\")\n        step3=run.clicking(\"xpath\",'/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/androidx.viewpager.widget.ViewPager/android.widget.RelativeLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.RelativeLayout[5]/android.widget.TextView')\n        logging.info(\"切换点唱\")\n        # step4=run.clicking(\"xpath\",'/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/androidx.viewpager.widget.ViewPager/android.widget.RelativeLayout/androidx.viewpager.widget.ViewPager/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[2]/android.widget.RelativeLayout[2]')\n        step4=run.clicking(\"id\",\"com.yuyin.live.voice:id/llRoot\")\n        logging,info(\"进入房间\")\n        step6=run.clicking(\"xpath\",'/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/androidx.viewpager.widget.ViewPager/android.widget.RelativeLayout/android.widget.RelativeLayout[2]/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[1]/android.widget.RelativeLayout/android.widget.ImageView')\n        logging,info(\"上一号麦\")\n        step7=run.clicking(\"id\",\"com.yuyin.live.voice:id/ivEmotion\")\n        logging.info(\"拉起表情栏\")\n        step8=run.clicking(\"xpath\",'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[1]/android.widget.ImageView')\n        logging.info(\"发送表情\")\n        step9=run.clicking(\"id\",\"com.yuyin.live.voice:id/mIvGift\")\n        logging,info(\"拉起礼物栏\")\n        step10=run.clicking(\"id\",\"com.yuyin.live.voice:id/mIvImg\")\n        logging,info(\"选择送礼物的对象\")\n        step11=run.clicking(\"xpath\",'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RelativeLayout[2]/android.widget.RelativeLayout/androidx.viewpager.widget.ViewPager/android.widget.LinearLayout/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[4]/android.widget.ImageView')\n        logging,info(\"选择礼物\")\n        step12=run.clicking(\"id\",\"com.yuyin.live.voice:id/mTvSend\")\n        logging,info(\"赠送礼物\")\n        step13=run.clicking(\"id\",\"com.yuyin.live.voice:id/mRlGoMic\")\n        logging.info(\"下麦\")\n        step14=run.clicking(\"id\",'com.yuyin.live.voice:id/mIvPublicChat')\n        logging.info(\"拉起消息框\")\n        step15=run.clicking(\"id\",\"com.yuyin.live.voice:id/mEtContent\")\n        step16=run.input_text(\"id\",\"com.yuyin.live.voice:id/mEtContent\",\"以爱之名\")\n        logging.info(\"输入消息文本\")\n        step17=run.clicking(\"id\",\"com.yuyin.live.voice:id/mTvSend\")\n        logging.info(\"发送消息\")\n        step18=run.assert_text(\"xpath\",'/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[1]/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.LinearLayout[1]/android.widget.TextView[3]')\n        # print(step18)\n        temp=db.query(\"SELECT * FROM room WHERE room_id =168\")\n        res=temp[0][2]\n        # sleep=run.wait_sleep(5)\n        end=run.quit_app()\n        logging.info(\"退出App\")\n>       assert step18 == res,\"元素的text值与数据库一致即用例通过\"\nE       AssertionError: 元素的text值与数据库一致即用例通过\nE       assert '410的房间' == 410\nE         +'410的房间'\nE         -410\n\ncases\\test_party.py:55: AssertionError",
+    "steps" : [ {
+      "name" : "派对房间发送快捷消息的方法",
+      "time" : {
+        "start" : 1625650254387,
+        "stop" : 1625650402753,
+        "duration" : 148366
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: 元素的text值与数据库一致即用例通过\nassert '410的房间' == 410\n  +'410的房间'\n  -410\n",
+      "statusTrace" : "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\allure_commons\\_allure.py\", line 172, in impl\n    return func(*a, **kw)\n  File \"C:\\pyapp\\tapp\\cases\\test_party.py\", line 55, in test_01_demo\n    assert step18 == res,\"元素的text值与数据库一致即用例通过\"\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "8f8a1aa699ac5e4e",
+      "name" : "log",
+      "source" : "8f8a1aa699ac5e4e.txt",
+      "type" : "text/plain",
+      "size" : 812
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_party"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MLECP88"
+  }, {
+    "name" : "thread",
+    "value" : "19004-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "cases.test_party"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "run(order=1)" ]
+  },
+  "source" : "1617a120e20abee.json",
+  "parameterValues" : [ ]
+}

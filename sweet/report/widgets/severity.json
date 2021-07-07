@@ -1,0 +1,61 @@
+[ {
+  "uid" : "1617a120e20abee",
+  "name" : "进入派对操作",
+  "time" : {
+    "start" : 1625650254387,
+    "stop" : 1625650402754,
+    "duration" : 148367
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "c7ae2bf0826a339b",
+  "name" : "test_05_demo1",
+  "time" : {
+    "start" : 1625650402795,
+    "stop" : 1625650402795,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "7dd4a05d87d588bc",
+  "name" : "test_04_demo1",
+  "time" : {
+    "start" : 1625650402797,
+    "stop" : 1625650402797,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "76b9a85aa17c9537",
+  "name" : "test_01_demo2",
+  "time" : {
+    "start" : 1625650402791,
+    "stop" : 1625650402791,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dda26641e1ab1817",
+  "name" : "test_03_demo1",
+  "time" : {
+    "start" : 1625650402793,
+    "stop" : 1625650402794,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bc4f0a7dbc021502",
+  "name" : "test_02_demo2",
+  "time" : {
+    "start" : 1625650254384,
+    "stop" : 1625650254384,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+} ]

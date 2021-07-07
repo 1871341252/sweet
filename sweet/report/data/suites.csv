@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Jul 07 17:33:22 CST 2021","Wed Jul 07 17:33:22 CST 2021","1","cases","test_demo","TestCases","","","test_03_demo1",""
+"passed","Wed Jul 07 17:33:22 CST 2021","Wed Jul 07 17:33:22 CST 2021","0","cases","test_demo","TestCases","","","test_01_demo2",""
+"passed","Wed Jul 07 17:33:22 CST 2021","Wed Jul 07 17:33:22 CST 2021","0","cases","test_demo","TestCases","","","test_04_demo1",""
+"skipped","Wed Jul 07 17:30:54 CST 2021","Wed Jul 07 17:30:54 CST 2021","0","cases","test_demo","TestCases","","","test_02_demo2",""
+"skipped","Wed Jul 07 17:33:22 CST 2021","Wed Jul 07 17:33:22 CST 2021","0","cases","test_demo","TestCases","","","test_05_demo1",""
+"failed","Wed Jul 07 17:30:54 CST 2021","Wed Jul 07 17:33:22 CST 2021","148367","cases","test_party","TestCases","","","进入派对操作","派对房间内发消息，送礼物，上麦，下麦，发表情等"

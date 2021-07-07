@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: 元素的text值与数据库一致即用例通过\nassert '410的房间' == 410\n  +'410的房间'\n  -410",
+      "children" : [ {
+        "name" : "进入派对操作",
+        "uid" : "1617a120e20abee",
+        "parentUid" : "0836049d15e159e9a4586d33f5af35a6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1625650254387,
+          "stop" : 1625650402754,
+          "duration" : 148367
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0836049d15e159e9a4586d33f5af35a6"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}
