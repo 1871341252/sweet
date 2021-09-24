@@ -1,0 +1,123 @@
+{
+  "uid" : "c12b609e3e84b5ff",
+  "name" : "轮播图",
+  "fullName" : "cases.test_01_login.TestCases#test_get_banner",
+  "historyId" : "7bab4ce4056c51a4736bf37676b26424",
+  "time" : {
+    "start" : 1632396009298,
+    "stop" : 1632396009464,
+    "duration" : 166
+  },
+  "description" : "获取轮播图",
+  "descriptionHtml" : "<p>获取轮播图</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestCases",
+    "time" : {
+      "start" : 1632396009296,
+      "stop" : 1632396009297,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "获取轮播图",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "轮播图",
+      "time" : {
+        "start" : 1632396009298,
+        "stop" : 1632396009464,
+        "duration" : 166
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "c95c52eccc640063",
+      "name" : "log",
+      "source" : "c95c52eccc640063.txt",
+      "type" : "text/plain",
+      "size" : 168
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestCases::0",
+    "time" : {
+      "start" : 1632396009465,
+      "stop" : 1632396009465,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=4)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_01_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MLECP88"
+  }, {
+    "name" : "thread",
+    "value" : "19308-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "cases.test_01_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=4)" ]
+  },
+  "source" : "c12b609e3e84b5ff.json",
+  "parameterValues" : [ ]
+}

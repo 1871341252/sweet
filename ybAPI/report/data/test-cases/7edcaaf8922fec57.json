@@ -1,0 +1,123 @@
+{
+  "uid" : "7edcaaf8922fec57",
+  "name" : "用户消息接口",
+  "fullName" : "cases.test_03_message.TestCases#test_message_list",
+  "historyId" : "b2985e3a1a3511dc10a22bb5e85399aa",
+  "time" : {
+    "start" : 1632396007852,
+    "stop" : 1632396008036,
+    "duration" : 184
+  },
+  "description" : "用户消息接口",
+  "descriptionHtml" : "<p>用户消息接口</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestCases",
+    "time" : {
+      "start" : 1632396007526,
+      "stop" : 1632396007852,
+      "duration" : 326
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "用户消息接口",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "用户消息接口",
+      "time" : {
+        "start" : 1632396007852,
+        "stop" : 1632396008036,
+        "duration" : 184
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "ce68fddc0da5dcc4",
+      "name" : "log",
+      "source" : "ce68fddc0da5dcc4.txt",
+      "type" : "text/plain",
+      "size" : 173
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestCases::0",
+    "time" : {
+      "start" : 1632396008037,
+      "stop" : 1632396008038,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=2)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_03_message"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MLECP88"
+  }, {
+    "name" : "thread",
+    "value" : "19308-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "cases.test_03_message"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=2)" ]
+  },
+  "source" : "7edcaaf8922fec57.json",
+  "parameterValues" : [ ]
+}

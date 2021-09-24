@@ -1,0 +1,78 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 10004 == 0\n  +10004\n  -0",
+      "children" : [ {
+        "name" : "打招呼接口",
+        "uid" : "cc9528664b0ff358",
+        "parentUid" : "53944ef2bc8633490a803dd1b60c8027",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632396019877,
+          "stop" : 1632396020033,
+          "duration" : 156
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'在干嘛'" ]
+      }, {
+        "name" : "打招呼接口",
+        "uid" : "3281d6ac08ea9d7e",
+        "parentUid" : "53944ef2bc8633490a803dd1b60c8027",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632396020107,
+          "stop" : 1632396020263,
+          "duration" : 156
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'吃饭没'" ]
+      }, {
+        "name" : "发消息接口",
+        "uid" : "1515db884c637dd",
+        "parentUid" : "53944ef2bc8633490a803dd1b60c8027",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632396021030,
+          "stop" : 1632396021210,
+          "duration" : 180
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'222222222'" ]
+      }, {
+        "name" : "发消息接口",
+        "uid" : "e4f16a98b466e029",
+        "parentUid" : "53944ef2bc8633490a803dd1b60c8027",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632396021219,
+          "stop" : 1632396021397,
+          "duration" : 178
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'嘿嘿嘿嘿'" ]
+      }, {
+        "name" : "邀请真人认证接口",
+        "uid" : "d3ffc8100ab90a2f",
+        "parentUid" : "53944ef2bc8633490a803dd1b60c8027",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632396021406,
+          "stop" : 1632396021570,
+          "duration" : 164
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "53944ef2bc8633490a803dd1b60c8027"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

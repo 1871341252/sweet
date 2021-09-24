@@ -1,0 +1,129 @@
+{
+  "uid" : "7279c16d84bc1e5e",
+  "name" : "增加常用语接口",
+  "fullName" : "cases.test_03_message.TestCases#test_message_addUserSayHi",
+  "historyId" : "4ed4bfb33508f8bfc95c0c71c19929dd",
+  "time" : {
+    "start" : 1632396021788,
+    "stop" : 1632396022099,
+    "duration" : 311
+  },
+  "description" : "增加常用语接口",
+  "descriptionHtml" : "<p>增加常用语接口</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestCases",
+    "time" : {
+      "start" : 1632396017750,
+      "stop" : 1632396018070,
+      "duration" : 320
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "增加常用语接口",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "增加常用语接口",
+      "time" : {
+        "start" : 1632396021788,
+        "stop" : 1632396022099,
+        "duration" : 311
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "'嘿嘿嘿嘿'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "5b6d0f147ca85711",
+      "name" : "log",
+      "source" : "5b6d0f147ca85711.txt",
+      "type" : "text/plain",
+      "size" : 58
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestCases::0",
+    "time" : {
+      "start" : 1632396022725,
+      "stop" : 1632396022725,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=20)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_03_message"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MLECP88"
+  }, {
+    "name" : "thread",
+    "value" : "19308-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "cases.test_03_message"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "value",
+    "value" : "'嘿嘿嘿嘿'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=20)" ]
+  },
+  "source" : "7279c16d84bc1e5e.json",
+  "parameterValues" : [ "'嘿嘿嘿嘿'" ]
+}

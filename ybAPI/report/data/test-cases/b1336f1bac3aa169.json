@@ -1,0 +1,123 @@
+{
+  "uid" : "b1336f1bac3aa169",
+  "name" : "动态评论删除接口",
+  "fullName" : "cases.test_02_dynamic.TestCases#test_dynamic_contentdelete",
+  "historyId" : "be734d5694194d46a3fe6188a4925ee7",
+  "time" : {
+    "start" : 1632396016214,
+    "stop" : 1632396016537,
+    "duration" : 323
+  },
+  "description" : "动态评论删除接口",
+  "descriptionHtml" : "<p>动态评论删除接口</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestCases",
+    "time" : {
+      "start" : 1632396015895,
+      "stop" : 1632396016213,
+      "duration" : 318
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "动态评论删除接口",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "动态评论删除接口",
+      "time" : {
+        "start" : 1632396016214,
+        "stop" : 1632396016537,
+        "duration" : 323
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "3c5860b4db5d3b85",
+      "name" : "log",
+      "source" : "3c5860b4db5d3b85.txt",
+      "type" : "text/plain",
+      "size" : 174
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestCases::0",
+    "time" : {
+      "start" : 1632396016538,
+      "stop" : 1632396016539,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=11)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_02_dynamic"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MLECP88"
+  }, {
+    "name" : "thread",
+    "value" : "19308-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "cases.test_02_dynamic"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=11)" ]
+  },
+  "source" : "b1336f1bac3aa169.json",
+  "parameterValues" : [ ]
+}

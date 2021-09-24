@@ -1,0 +1,572 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-MLECP88",
+    "children" : [ {
+      "name" : "19308-MainThread",
+      "children" : [ {
+        "name" : "通话信息接口",
+        "uid" : "fb604dc88eefa94d",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396018780,
+          "stop" : 1632396018954,
+          "duration" : 174
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "打招呼接口",
+        "uid" : "cc9528664b0ff358",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632396019877,
+          "stop" : 1632396020033,
+          "duration" : 156
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'在干嘛'" ]
+      }, {
+        "name" : "邀请真人认证接口",
+        "uid" : "d3ffc8100ab90a2f",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632396021406,
+          "stop" : 1632396021570,
+          "duration" : 164
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "登录",
+        "uid" : "8c3c41259a25d799",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396006366,
+          "stop" : 1632396006542,
+          "duration" : 176
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "聊天设置信息接口",
+        "uid" : "7ece7fa5642065e8",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396016969,
+          "stop" : 1632396017160,
+          "duration" : 191
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "动态列表接口",
+        "uid" : "dce3c336f9616a2e",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396005499,
+          "stop" : 1632396005687,
+          "duration" : 188
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'time'" ]
+      }, {
+        "name" : "动态评论接口",
+        "uid" : "c0f4bc8c3295b43b",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396012156,
+          "stop" : 1632396012461,
+          "duration" : 305
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'测试啊'" ]
+      }, {
+        "name" : "常用语列表接口",
+        "uid" : "8ac4d1b918e8dd17",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396021582,
+          "stop" : 1632396021785,
+          "duration" : 203
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "动态列表接口",
+        "uid" : "a05b0b8e94bf5361",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396005689,
+          "stop" : 1632396005864,
+          "duration" : 175
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'follow'" ]
+      }, {
+        "name" : "动态评论删除接口",
+        "uid" : "b1336f1bac3aa169",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396016214,
+          "stop" : 1632396016537,
+          "duration" : 323
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "关注我的列表接口",
+        "uid" : "9fa3e9b45a6721b6",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396012901,
+          "stop" : 1632396013108,
+          "duration" : 207
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "发消息接口",
+        "uid" : "e4f16a98b466e029",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632396021219,
+          "stop" : 1632396021397,
+          "duration" : 178
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'嘿嘿嘿嘿'" ]
+      }, {
+        "name" : "未读消息总数接口",
+        "uid" : "c678efbd653e9ae3",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396014199,
+          "stop" : 1632396014356,
+          "duration" : 157
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "动态评论列表接口",
+        "uid" : "ed593a74fd240baa",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396011091,
+          "stop" : 1632396011256,
+          "duration" : 165
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "发布动态接口",
+        "uid" : "bf35179d4f96653d",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396006953,
+          "stop" : 1632396007520,
+          "duration" : 567
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'测试啊'" ]
+      }, {
+        "name" : "获取设备token",
+        "uid" : "c09214117372da07",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396003761,
+          "stop" : 1632396004864,
+          "duration" : 1103
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "我关注的列表接口",
+        "uid" : "a8ff1c15d7501eae",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396010482,
+          "stop" : 1632396010662,
+          "duration" : 180
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用户消息接口",
+        "uid" : "7edcaaf8922fec57",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396007852,
+          "stop" : 1632396008036,
+          "duration" : 184
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "增加常用语接口",
+        "uid" : "7279c16d84bc1e5e",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396021788,
+          "stop" : 1632396022099,
+          "duration" : 311
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'嘿嘿嘿嘿'" ]
+      }, {
+        "name" : "增加常用语接口",
+        "uid" : "36cb3b30358501d7",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396022105,
+          "stop" : 1632396022401,
+          "duration" : 296
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'哈哈哈哈'" ]
+      }, {
+        "name" : "举报动态",
+        "uid" : "73b02734d21f98bb",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396014746,
+          "stop" : 1632396015396,
+          "duration" : 650
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "删除常用语接口",
+        "uid" : "55d6756f8c558aec",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396022562,
+          "stop" : 1632396022723,
+          "duration" : 161
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'哈哈哈哈'" ]
+      }, {
+        "name" : "互关的列表接口",
+        "uid" : "58683667aeb39c05",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396011643,
+          "stop" : 1632396011804,
+          "duration" : 161
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "删除常用语接口",
+        "uid" : "3ebb87e132e80cdc",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396022404,
+          "stop" : 1632396022558,
+          "duration" : 154
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'嘿嘿嘿嘿'" ]
+      }, {
+        "name" : "首页信息",
+        "uid" : "3d2265f09d2bed58",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396008041,
+          "stop" : 1632396008211,
+          "duration" : 170
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "发消息接口",
+        "uid" : "1515db884c637dd",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632396021030,
+          "stop" : 1632396021210,
+          "duration" : 180
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'222222222'" ]
+      }, {
+        "name" : "系统消息接口",
+        "uid" : "fe465f1410e53c45",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396006202,
+          "stop" : 1632396006363,
+          "duration" : 161
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "动态详情接口",
+        "uid" : "799a6ee6e13de48d",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396008550,
+          "stop" : 1632396008714,
+          "duration" : 164
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "动态消息列表",
+        "uid" : "df557baa56679ae9",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396013508,
+          "stop" : 1632396013688,
+          "duration" : 180
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "发消息接口",
+        "uid" : "2669067daed80299",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396020273,
+          "stop" : 1632396021024,
+          "duration" : 751
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'11111'" ]
+      }, {
+        "name" : "动态列表接口",
+        "uid" : "82e03e7ee05c9b56",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396005288,
+          "stop" : 1632396005494,
+          "duration" : 206
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'selected'" ]
+      }, {
+        "name" : "系统消息列表接口",
+        "uid" : "7a16437bd4c4c99e",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396009113,
+          "stop" : 1632396009293,
+          "duration" : 180
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "打招呼接口",
+        "uid" : "a7dc8d92bf272288",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396019128,
+          "stop" : 1632396019874,
+          "duration" : 746
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'HelloWord'" ]
+      }, {
+        "name" : "打招呼接口",
+        "uid" : "3281d6ac08ea9d7e",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "failed",
+        "time" : {
+          "start" : 1632396020107,
+          "stop" : 1632396020263,
+          "duration" : 156
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'吃饭没'" ]
+      }, {
+        "name" : "动态点赞接口",
+        "uid" : "426196f060982dcd",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396009818,
+          "stop" : 1632396009984,
+          "duration" : 166
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "动态删除接口",
+        "uid" : "346b90c8e5462204",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396017583,
+          "stop" : 1632396017747,
+          "duration" : 164
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "轮播图",
+        "uid" : "c12b609e3e84b5ff",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396009298,
+          "stop" : 1632396009464,
+          "duration" : 166
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "搭讪接口",
+        "uid" : "bf07de70631223fe",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396018070,
+          "stop" : 1632396018578,
+          "duration" : 508
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "是否能私信接口",
+        "uid" : "b8e0bd7934fa59e0",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396018956,
+          "stop" : 1632396019124,
+          "duration" : 168
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "公告消息列表接口",
+        "uid" : "ca81b2a3e411ac32",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396010319,
+          "stop" : 1632396010476,
+          "duration" : 157
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'" ]
+      }, {
+        "name" : "亲密关系列表接口",
+        "uid" : "2cad9612de44787",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396014022,
+          "stop" : 1632396014197,
+          "duration" : 175
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "亲密度接口",
+        "uid" : "5ffc71206630087e",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396018581,
+          "stop" : 1632396018778,
+          "duration" : 197
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "置顶消息接口",
+        "uid" : "88f043b8e6f3973c",
+        "parentUid" : "9a77c4f144386bf9d7c04c1b382e92ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632396015732,
+          "stop" : 1632396015893,
+          "duration" : 161
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9a77c4f144386bf9d7c04c1b382e92ec"
+    } ],
+    "uid" : "4fcdc127aec32bb60eb69e1f9d91632a"
+  } ]
+}
