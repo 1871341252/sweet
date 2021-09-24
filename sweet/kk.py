@@ -26,8 +26,11 @@ def test():
     print(res)
     td=res[0][3]
     print(td)
+    # for i in res:
+    #     list1.append(i)
+    # print(list1)
     for i in res:
-        list1.append(i)
-    print(list1)
+        for j in i:
+            print(j)
 if __name__ == "__main__":
     test()  

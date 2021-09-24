@@ -1,4 +1,4 @@
-from appium import webdriver
+﻿from appium import webdriver
 import time
 
 def get_driver():

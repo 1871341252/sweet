@@ -1,4 +1,4 @@
-from logging import info
+﻿from logging import info
 from utils.appium_tools import Runappium
 from utils.app_log import logging
 from utils.mysql_tools import Db
@@ -6,6 +6,7 @@ import pytest
 import allure
 
 db=Db("39.100.88.180",3306,"voice","xpvhafO26ghDwU3a","voice_api")
+
 
 run=Runappium()
 class TestCases:
