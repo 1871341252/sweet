@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_01_login.py:21 开始执行
+[32mINFO    [0m root:test_01_login.py:26 测试结束

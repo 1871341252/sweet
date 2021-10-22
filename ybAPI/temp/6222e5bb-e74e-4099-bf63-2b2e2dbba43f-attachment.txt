@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_02_dynamic.py:28 开始执行
+[32mINFO    [0m root:test_02_dynamic.py:81 动态发布过于频繁，请稍后再试
+[32mINFO    [0m root:test_02_dynamic.py:37 测试结束

@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_02_dynamic.py:28 开始执行
+[32mINFO    [0m root:test_02_dynamic.py:231 您已举报该动态，平台人员会抓紧核实，感谢您对平台的支持
+[32mINFO    [0m root:test_02_dynamic.py:37 测试结束
