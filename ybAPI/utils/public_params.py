@@ -7,7 +7,7 @@ get_token=Token()
 class Public:
     """获取公共参数类"""
     def get_userinfo(self):
-        access_token=get_token.get_user_token('13999990007','123456')
+        access_token=get_token.get_user_token('13999990006','123456')
         sign_token=get_sign.get_sign(access_token)
         return access_token,sign_token
 
@@ -24,6 +24,7 @@ class Public:
             'public_app_version_code':(None,'30'),
             'public_android_id':(None,'9cef2d09b8f32ab0'),
             'public_app_os':(None,'Android'),
+            'shumei_device_id':(None,'BhN5EywFhYjb8pJXjD5UCAULN0ryV4BcxXX0okynGdUF+'),
             'timestamp':(None,times),
             'yuan_api_sign':(None,sign),
             'access_token':(None,access_token)

@@ -6,7 +6,8 @@ public_params={
     'public_app_version':(None,'1.3.0'),
     'public_app_version_code':(None,'30'),
     'public_android_id':(None,'9cef2d09b8f32ab0'),
-    'public_app_os':(None,'Android')
+    'public_app_os':(None,'Android'),
+    'shumei_device_id':(None,'BhN5EywFhYjb8pJXjD5UCAULN0ryV4BcxXX0okynGdUF+')
     }
 
 class Token:

@@ -27,7 +27,7 @@ class TestCases:
         global sign
         logging.info("开始执行")
         print('\n开始执行')
-        access_token=get_token.get_user_token('13999990007','123456')
+        access_token=get_token.get_user_token('13999990006','123456')
         sign_token=get_sign.get_sign(access_token)
         times=sign_token[0]
         sign=sign_token[1]
