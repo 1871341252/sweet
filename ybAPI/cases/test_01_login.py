@@ -6,7 +6,7 @@ from utils.get_sign import *
 from utils.yaml_tools import *
 
 get_sign=Sign()
-login_data=YamlHandler("D:/ybAPI/data_yaml/login.yaml").read_yaml()
+login_data=YamlHandler("./data_yaml/login.yaml").read_yaml()
 
 public_params={
     'public_oaid':(None,'7dfc2dc3-8bc2-4092-8dfb-d38a9366b267'),
