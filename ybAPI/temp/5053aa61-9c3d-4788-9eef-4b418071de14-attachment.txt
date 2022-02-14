@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_02_dynamic.py:167 请求成功
+[32mINFO    [0m root:test_02_dynamic.py:27 测试结束

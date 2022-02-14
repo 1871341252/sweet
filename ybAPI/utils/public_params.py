@@ -1,14 +1,23 @@
 from utils.get_sign import *
 from utils.get_token import *
+from utils.public_tools import *
 
-get_sign=Sign()
-get_token=Token()
+conf_temp=Tools().read_configure("public_conf/conf.ini")
+user_conf=conf_temp.items("user")
+
+# get_sign=Sign()
+# get_token=Token()
 
 class Public:
-    """获取公共参数类"""
+    # """获取公共参数类"""
+    # def __init__(self,phone,code):
+    #     """初始化方法"""
+    #     self.phone=phone
+    #     self.code=code
+
     def get_userinfo(self):
-        access_token=get_token.get_user_token('13999990006','123456')
-        sign_token=get_sign.get_sign(access_token)
+        access_token=Token().get_user_token(user_conf[0][1],user_conf[1][1])
+        sign_token=Sign().get_sign(access_token)
         return access_token,sign_token
 
     def public_params(self):
@@ -29,4 +38,5 @@ class Public:
             'yuan_api_sign':(None,sign),
             'access_token':(None,access_token)
             }
+        # print(public_params)
         return public_params

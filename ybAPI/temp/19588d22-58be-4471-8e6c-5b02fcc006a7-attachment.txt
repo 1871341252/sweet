@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_03_message.py:20 开始执行
+[32mINFO    [0m root:test_03_message.py:157 请求成功

@@ -3,8 +3,10 @@ import pytest
 import allure
 from utils.log import logging
 from utils.get_sign import *
+from utils.yaml_tools import *
 
 get_sign=Sign()
+login_data=YamlHandler("D:/ybAPI/data_yaml/login.yaml").read_yaml()
 
 public_params={
     'public_oaid':(None,'7dfc2dc3-8bc2-4092-8dfb-d38a9366b267'),
@@ -35,11 +37,8 @@ class TestCases:
         global devices_token
         url="https://api.test.xiangcaohuyu.com/v1/app/basic/getDeviceToken"
         devices_token=requests.post(url,files=public_params)
-        # res=devices_token.json()["d"]["device_token"]
         logging.info(devices_token.json()["m"])
         assert devices_token.json()["c"]==0
-        # print(devices_token.json()["m"])
-        # print(res)
         
     @pytest.mark.run(order=2)
     @allure.step(title="登录")
@@ -50,55 +49,12 @@ class TestCases:
         global access_token
         url="https://api.test.xiangcaohuyu.com/v1/account/login/index"
         data={
-            'phone':'13999990002',
-            'code':'123456',
-            'category':'phone',
+            'phone':login_data["login"]["phone"],
+            'code':login_data["login"]["code"],
+            'category':login_data["login"]["category"],
             'public_device_token':devices_token.json()["d"]["device_token"]
         }
         access_token_temp=requests.post(url,data=data,files=public_params)
         access_token=str(access_token_temp.json()["d"]["access_token"])
-        # print(access_token)
         logging.info(access_token_temp.json()["m"])
         assert access_token_temp.json()["c"]==0
-        # print(access_token_temp.json())
-        # print(access_token_temp.json()["d"]["access_token"])
-        # print(access_token_temp.json()["m"])
-        # print(res)
-        # print(json.dumps(res.json(), ensure_ascii=False, sort_keys=True, indent=4))
-
-    @pytest.mark.run(order=3)
-    @allure.step(title="首页信息")
-    @allure.title("首页信息")
-    def test_profile_index(self):
-        """首页信息"""
-        res=get_sign.get_sign(access_token)
-        times=res[0]
-        sign=res[1]
-        url="https://api.test.xiangcaohuyu.com/v1/user/profile/index"
-        data={
-            'timestamp':times,
-            'yuan_api_sign':sign,
-            'access_token':access_token
-        }
-        res=requests.post(url,data=data,files=public_params)
-        logging.info(res.json()["m"])
-        assert res.json()["c"]==0
-
-    @pytest.mark.run(order=4)
-    @allure.step(title="轮播图")
-    @allure.title("轮播图")
-    def test_get_banner(self):
-        """获取轮播图"""
-        res=get_sign.get_sign(access_token)
-        times=res[0]
-        sign=res[1]
-        url="https://api.test.xiangcaohuyu.com/v1/app/basic/carousel"
-        data={
-            'timestamp':times,
-            'yuan_api_sign':sign,
-            'access_token':access_token,
-            'type':'message'
-        }
-        res=requests.post(url,data=data,files=public_params)
-        logging.info(res.json()["m"])
-        assert res.json()["c"]==0

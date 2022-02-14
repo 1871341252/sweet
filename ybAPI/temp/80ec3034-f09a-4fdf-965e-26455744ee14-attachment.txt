@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_02_dynamic.py:20 开始执行
+[32mINFO    [0m root:test_02_dynamic.py:139 请求成功

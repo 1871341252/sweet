@@ -4,333 +4,276 @@ import allure
 from utils.log import logging
 from utils.get_sign import *
 from utils.get_token import *
-from utils.public_params import *
 from utils.tools import *
+from utils.public_params import *
+from utils.public_tools import *
 
-get_sign=Sign()
-get_token=Token()
-get_params=Public()
-db=Db("121.5.7.158",3306,"yuanban","xpvhafO26ghDwU3aa","yuanban_api")
+datalist=  readexcle("./data/消息模块接口测试用例.xls","Cases")
+conf_temp=Tools().read_configure("public_conf/conf.ini")
+mysql_conf=conf_temp.items("mysql")
+db=Db(mysql_conf[0][1],int(mysql_conf[1][1]),mysql_conf[2][1],mysql_conf[3][1],mysql_conf[4][1])
+url_conf=conf_temp.items("url")
 
 class TestCases:
     @classmethod
     def setup_class(cls):
         logging.info("开始执行")
         print('\n开始执行')
-        cls.public_params=get_params.public_params()
-        return cls.public_params
+        cls.public_params=Public().public_params()
+        return public_params
 
     @classmethod
     def teardown_class(cls):
         logging.info("测试结束")
         print('\n测试结束')
 
+    @pytest.mark.parametrize('args', [datalist[0][5]])
     @pytest.mark.run(order=1)
     @allure.step(title="系统消息接口")
     @allure.title("系统消息接口")
-    def test_message_systemList(self):
+    def test_message_systemList(self,args):
         """系统消息接口"""
-        url="https://api.test.xiangcaohuyu.com/v1/user/message/systemList"
+        url=url_conf[0][1]+datalist[0][2]
         res=requests.post(url,files=self.public_params)
         logging.info(res.json()["m"])
-        print(res.json())
         assert res.json()["c"]==0
 
+    @pytest.mark.parametrize('args', [datalist[1][5]])
     @pytest.mark.run(order=2)
     @allure.step(title="用户消息接口")
     @allure.title("用户消息接口")
-    def test_message_list(self):
+    def test_message_list(self,args):
         """用户消息接口"""
-        url="https://api.test.xiangcaohuyu.com/v1/user/message/list"
-        data={
-            'page':'1',
-            'pagesize':'20'
-        }
-        res=requests.post(url,data=data,files=self.public_params)
+        url=url_conf[0][1]+datalist[1][2]
+        res=requests.post(url,data=eval(args),files=self.public_params)
         logging.info(res.json()["m"])
         # print(res.json())
         assert res.json()["c"]==0
 
+    @pytest.mark.parametrize('args', [datalist[2][5]])
     @pytest.mark.run(order=3)
     @allure.step(title="系统消息列表接口")
     @allure.title("系统消息列表接口")
-    def test_message_system(self):
+    def test_message_system(self,args):
         """系统消息列表接口"""
-        url="https://api.test.xiangcaohuyu.com/v1/user/message/system"
+        url=url_conf[0][1]+datalist[2][2]
         res=requests.post(url,files=self.public_params)
         logging.info(res.json()["m"])
         # print(res.json())
         assert res.json()["c"]==0
 
-    @pytest.mark.parametrize('value', ("1"))
+    @pytest.mark.parametrize('args', [datalist[3][5]])
     @pytest.mark.run(order=4)
     @allure.step(title="公告消息列表接口")
     @allure.title("公告消息列表接口")
-    def test_message_systemNotification(self,value):
+    def test_message_systemNotification(self,args):
         """公告消息列表接口"""
-        url="https://api.test.xiangcaohuyu.com/v1/user/message/systemNotification"
-        data={
-            'app_id':value
-        }
-        res=requests.post(url,data=data,files=self.public_params)
+        url=url_conf[0][1]+datalist[3][2]
+        res=requests.post(url,data=eval(args),files=self.public_params)
         logging.info(res.json()["m"])
         # print(res.json())
         assert res.json()["c"]==0
 
+    @pytest.mark.parametrize('args', [datalist[4][5]])
     @pytest.mark.run(order=5)
     @allure.step(title="我关注的列表接口")
     @allure.title("我关注的列表接口")
-    def test_message_FriendsFollowList(self):
+    def test_message_FriendsFollowList(self,args):
         """我关注的列表接口"""
-        url="https://api.test.xiangcaohuyu.com/v1/user/message/FriendsFollowList"
-        data={
-            'page':'1',
-            'pagesize':'20'
-        }
-        res=requests.post(url,data=data,files=self.public_params)
+        url=url_conf[0][1]+datalist[4][2]
+        res=requests.post(url,data=eval(args),files=self.public_params)
         logging.info(res.json()["m"])
         # print(res.json())
         assert res.json()["c"]==0
 
+    @pytest.mark.parametrize('args', [datalist[5][5]])
     @pytest.mark.run(order=6)
     @allure.step(title="互关的列表接口")
     @allure.title("互关的列表接口")
-    def test_message_FriendsList(self):
+    def test_message_FriendsList(self,args):
         """互关的列表接口"""
-        url="https://api.test.xiangcaohuyu.com/v1/user/message/FriendsList"
-        data={
-            'page':'1',
-            'pagesize':'20'
-        }
-        res=requests.post(url,data=data,files=self.public_params)
+        url=url_conf[0][1]+datalist[5][2]
+        res=requests.post(url,data=eval(args),files=self.public_params)
         logging.info(res.json()["m"])
         # print(res.json())
         assert res.json()["c"]==0
 
+    @pytest.mark.parametrize('args', [datalist[6][5]])
     @pytest.mark.run(order=7)
     @allure.step(title="关注我的列表接口")
     @allure.title("关注我的列表接口")
-    def test_message_FriendsFansList(self):
+    def test_message_FriendsFansList(self,args):
         """关注我的列表接口"""
-        url="https://api.test.xiangcaohuyu.com/v1/user/message/FriendsFansList"
-        data={
-            'page':'1',
-            'pagesize':'20'
-        }
-        res=requests.post(url,data=data,files=self.public_params)
+        url=url_conf[0][1]+datalist[6][2]
+        res=requests.post(url,data=eval(args),files=self.public_params)
         logging.info(res.json()["m"])
         # print(res.json())
         assert res.json()["c"]==0
 
+    @pytest.mark.parametrize('args', [datalist[7][5]])
     @pytest.mark.run(order=8)
     @allure.step(title="亲密关系列表接口")
     @allure.title("亲密关系列表接口")
-    def test_message_intimacy(self):
+    def test_message_intimacy(self,args):
         """亲密关系列表接口"""
-        url="https://api.test.xiangcaohuyu.com/v1/user/message/intimacy"
-        data={
-            'page':'1',
-            'pagesize':'20'
-        }
-        res=requests.post(url,data=data,files=self.public_params)
+        url=url_conf[0][1]+datalist[7][2]
+        res=requests.post(url,data=eval(args),files=self.public_params)
         logging.info(res.json()["m"])
         # print(res.json())
         assert res.json()["c"]==0
     
+    @pytest.mark.parametrize('args', [datalist[8][5]])
     @pytest.mark.run(order=9)
     @allure.step(title="未读消息总数接口")
     @allure.title("未读消息总数接口")
-    def test_message_index(self):
+    def test_message_index(self,args):
         """未读消息总数接口"""
-        url="https://api.test.xiangcaohuyu.com/v1/user/message/index"
+        url=url_conf[0][1]+datalist[8][2]
         res=requests.post(url,files=self.public_params)
         logging.info(res.json()["m"])
         # print(res.json())
         assert res.json()["c"]==0
 
+    @pytest.mark.parametrize('args', [datalist[9][5]])
     @pytest.mark.run(order=10)
     @allure.step(title="置顶消息接口")
     @allure.title("置顶消息接口")
-    def test_message_top(self):
+    def test_message_top(self,args):
         """置顶消息接口"""
-        url="https://api.test.xiangcaohuyu.com/v1/user/message/Topping"
-        data={
-            'to_user_id':'380'
-        }
-        res=requests.post(url,data=data,files=self.public_params)
+        url=url_conf[0][1]+datalist[9][2]
+        res=requests.post(url,data=eval(args),files=self.public_params)
         logging.info(res.json()["m"])
         # print(res.json())
         assert res.json()["c"]==0
 
+    @pytest.mark.parametrize('args', [datalist[10][5]])
     @pytest.mark.run(order=11)
     @allure.step(title="聊天设置信息接口")
     @allure.title("聊天设置信息接口")
-    def test_message_chatSettings(self):
+    def test_message_chatSettings(self,args):
         """聊天设置信息接口"""
-        url="https://api.test.xiangcaohuyu.com/v1/user/message/chatSettings"
-        data={
-            'to_user_id':'380'
-        }
-        res=requests.post(url,data=data,files=self.public_params)
+        url=url_conf[0][1]+datalist[10][2]
+        res=requests.post(url,data=eval(args),files=self.public_params)
         logging.info(res.json()["m"])
         # print(res.json())
         assert res.json()["c"]==0
 
+    @pytest.mark.parametrize('args', [datalist[11][5]])
     @pytest.mark.run(order=12)
     @allure.step(title="搭讪接口")
     @allure.title("搭讪接口")
-    def test_message_sayHiPacket(self):
+    def test_message_sayHiPacket(self,args):
         """搭讪接口"""
-        url="https://api.test.xiangcaohuyu.com/v1/user/message/sayHiPacket"
-        data={
-            'to_user_id':'380'
-        }
-        res=requests.post(url,data=data,files=self.public_params)
+        url=url_conf[0][1]+datalist[11][2]
+        res=requests.post(url,data=eval(args),files=self.public_params)
         logging.info(res.json()["m"])
         # print(res.json())
         assert res.json()["c"]==0
 
+    @pytest.mark.parametrize('args', [datalist[12][5]])
     @pytest.mark.run(order=13)
     @allure.step(title="亲密度接口")
     @allure.title("亲密度接口")
-    def test_message_intimacyPopup(self):
+    def test_message_intimacyPopup(self,args):
         """亲密度接口"""
-        url="https://api.test.xiangcaohuyu.com/v1/user/message/intimacyPopup"
-        data={
-            'to_user_id':'380'
-        }
-        res=requests.post(url,data=data,files=self.public_params)
+        url=url_conf[0][1]+datalist[12][2]
+        res=requests.post(url,data=eval(args),files=self.public_params)
         logging.info(res.json()["m"])
         # print(res.json())
         assert res.json()["c"]==0
 
+    @pytest.mark.parametrize('args', [datalist[13][5]])
     @pytest.mark.run(order=14)
     @allure.step(title="通话信息接口")
     @allure.title("通话信息接口")
-    def test_message_privateChatInfo(self):
+    def test_message_privateChatInfo(self,args):
         """通话信息接口"""
-        url="https://api.test.xiangcaohuyu.com/v1/user/message/privateChatInfo"
-        data={
-            'to_user_id':'380'
-        }
-        res=requests.post(url,data=data,files=self.public_params)
+        url=url_conf[0][1]+datalist[13][2]
+        res=requests.post(url,data=eval(args),files=self.public_params)
         logging.info(res.json()["m"])
         # print(res.json())
         assert res.json()["c"]==0
 
+    @pytest.mark.parametrize('args', [datalist[14][5]])
     @pytest.mark.run(order=15)
     @allure.step(title="是否能私信接口")
     @allure.title("是否能私信接口")
-    def test_message_privateLetterFlg(self):
+    def test_message_privateLetterFlg(self,args):
         """是否能私信接口"""
-        url="https://api.test.xiangcaohuyu.com/v1/user/message/privateLetterFlg"
+        url=url_conf[0][1]+datalist[14][2]
         res=requests.post(url,files=self.public_params)
         logging.info(res.json()["m"])
         # print(res.json())
         assert res.json()["c"]==0
 
-    @pytest.mark.parametrize('value', ("HelloWord","在干嘛","吃饭没"))
+    @pytest.mark.parametrize('args', (datalist[15][5],datalist[16][5],datalist[17][5]))
     @pytest.mark.run(order=16)
     @allure.step(title="打招呼接口")
     @allure.title("打招呼接口")
-    def test_message_sayHi(self,value):
+    def test_message_sayHi(self,args):
         """打招呼接口"""
-        url="https://api.test.xiangcaohuyu.com/v1/user/message/sayHi"
-        data={
-            'to_user_id':'380',
-            'say_hi_content':value
-        }
-        res=requests.post(url,data=data,files=self.public_params)
+        url=url_conf[0][1]+datalist[15][2]
+        res=requests.post(url,data=eval(args),files=self.public_params)
         logging.info(res.json()["m"])
         # print(res.json())
         assert res.json()["c"]==0
 
-    @pytest.mark.parametrize('value', ("11111","222222222","嘿嘿嘿嘿"))
+    @pytest.mark.parametrize('args', (datalist[18][5],datalist[19][5],datalist[20][5]))
     @pytest.mark.run(order=17)
     @allure.step(title="发消息接口")
     @allure.title("发消息接口")
-    def test_message_send(self,value):
+    def test_message_send(self,args):
         """发消息接口"""
-        url="https://api.test.xiangcaohuyu.com/v1/user/message/send"
-        data={
-            'to_user_id':'380',
-            'msgType':'word',
-            'content':value
-        }
-        res=requests.post(url,data=data,files=self.public_params)
+        url=url_conf[0][1]+datalist[18][2]
+        res=requests.post(url,data=eval(args),files=self.public_params)
         logging.info(res.json()["m"])
         # print(res.json())
         assert res.json()["c"]==0
 
+    @pytest.mark.parametrize('args', [datalist[21][5]])
     @pytest.mark.run(order=18)
     @allure.step(title="邀请真人认证接口")
     @allure.title("邀请真人认证接口")
-    def test_message_inviteRealCertification(self):
+    def test_message_inviteRealCertification(self,args):
         """邀请真人认证接口"""
-        url="https://api.test.xiangcaohuyu.com/v1/user/message/inviteRealCertification"
-        data={
-            'to_user_id':'380'
-        }
-        res=requests.post(url,data=data,files=self.public_params)
+        url=url_conf[0][1]+datalist[21][2]
+        res=requests.post(url,data=eval(args),files=self.public_params)
         logging.info(res.json()["m"])
         # print(res.json())
         assert res.json()["c"]==0
 
+    @pytest.mark.parametrize('args', [datalist[22][5]])
     @pytest.mark.run(order=19)
     @allure.step(title="常用语列表接口")
     @allure.title("常用语列表接口")
-    def test_message_sayHiList(self):
+    def test_message_sayHiList(self,args):
         """常用语列表接口"""
-        url="https://api.test.xiangcaohuyu.com/v1/user/message/sayHiList"
-        data={
-            'to_user_id':'380'
-        }
-        res=requests.post(url,data=data,files=self.public_params)
+        url=url_conf[0][1]+datalist[22][2]
+        res=requests.post(url,data=eval(args),files=self.public_params)
         logging.info(res.json()["m"])
         # print(res.json())
         assert res.json()["c"]==0
 
-    @pytest.mark.parametrize('value', ("嘿嘿嘿嘿","哈哈哈哈"))
+    @pytest.mark.parametrize('args', (datalist[23][5],datalist[24][5]))
     @pytest.mark.run(order=20)
     @allure.step(title="增加常用语接口")
     @allure.title("增加常用语接口")
-    def test_message_addUserSayHi(self,value):
+    def test_message_addUserSayHi(self,args):
         """增加常用语接口"""
-        url="https://api.test.xiangcaohuyu.com/v1/user/message/addUserSayHi"
-        data={
-            'say_hi_content':value
-        }
-        res=requests.post(url,data=data,files=self.public_params)
+        url=url_conf[0][1]+datalist[23][2]
+        res=requests.post(url,data=eval(args),files=self.public_params)
         logging.info(res.json()["m"])
         # print(res.json())
         assert res.json()["c"]==0
 
-    @pytest.mark.parametrize('value', ("嘿嘿嘿嘿","哈哈哈哈"))
+    @pytest.mark.parametrize('args', (datalist[25][5],datalist[26][5]))
     @pytest.mark.run(order=21)
     @allure.step(title="删除常用语接口")
     @allure.title("删除常用语接口")
-    def test_message_delUserSayHi(self,value):
+    def test_message_delUserSayHi(self,args):
         """删除常用语接口"""
-        url="https://api.test.xiangcaohuyu.com/v1/user/message/delUserSayHi"
-        data={
-            'say_hi_content':value
-        }
-        res=requests.post(url,data=data,files=self.public_params)
+        url=url_conf[0][1]+datalist[25][2]
+        res=requests.post(url,data=eval(args),files=self.public_params)
         logging.info(res.json()["m"])
         # print(res.json())
         assert res.json()["c"]==0
-
-    
-
-
-    
-    
-
-    
-
-    
-
-    
-    
-
-    

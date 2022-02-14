@@ -12,7 +12,7 @@ class Db:
         self.password = password
         self.db = dbname
 
-    def query(self,sql):
+    def query(self,sql,value):
         '''
         这是数据库查询的方法
         '''
@@ -20,14 +20,14 @@ class Db:
             password=self.password,db=self.db,charset = 'utf8') # 1、连接数据库
         cursor = db.cursor() # 2、获取数据库游标（就是光标）
         try:
-            cursor.execute(sql) # 3、在游标中执行SQL语句,select
+            cursor.execute(sql,(value)) # 3、在游标中执行SQL语句,select
             res = cursor.fetchall() # 4、获取返回值
             db.close() # 5、关闭数据库连接
             return res
         except Exception as e:
             return "SQL语句错误，请检查后再输入！,{}".format(e)
 
-    def commit(self,sql):
+    def commit(self,sql,value):
         '''
         这是数据库新增、修改、删除的方法
         '''
@@ -35,7 +35,7 @@ class Db:
             password=self.password,db=self.db,charset = 'utf8') # 1、连接数据库
         cursor = db.cursor() # 2、获取数据库游标（就是光标）
         try:
-            cursor.execute(sql) # 3、在游标中执行SQL语句,可以执行insert update delete
+            cursor.execute(sql,(value)) # 3、在游标中执行SQL语句,可以执行insert update delete
             db.commit() # 4、应用
             db.close() # 5、关闭数据库连接
             return True

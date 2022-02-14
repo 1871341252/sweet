@@ -15,7 +15,7 @@ class Token:
     def get_devices_token(self):
         """获取设备token"""
         url="https://api.test.xiangcaohuyu.com/v1/app/basic/getDeviceToken"
-        devices_token=requests.post(url,files=public_params)
+        devices_token=requests.post(url,files=public_params,verify=False)
         return devices_token
 
     def get_user_token(self,phone,code):
@@ -28,7 +28,9 @@ class Token:
             'category':'phone',
             'public_device_token':devices_token.json()["d"]["device_token"]
         }
-        access_token_temp=requests.post(url,data=data,files=public_params)
-        access_token=str(access_token_temp.json()["d"]["access_token"])
+        access_token_temp=requests.post(url,data=data,files=public_params,verify=False)
+        access_token=access_token_temp.json()["d"]["access_token"]
+        # access_token=str(access_token_temp.json()["d"]["access_token"])
+        # print(access_token_temp.json())
         return access_token
-        # print(access_token)
+        
