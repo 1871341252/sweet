@@ -168,5 +168,3 @@ class TestCases:
         logging.info(res.json()["m"])
         # print(res.json())
         assert res.json()["c"]==0
-
-
