@@ -1,0 +1,129 @@
+{
+  "uid" : "3a2907b5a05f612f",
+  "name" : "发消息接口",
+  "fullName" : "cases.test_03_message.TestCases#test_message_send",
+  "historyId" : "ba500665f30f8b9fd80bb8346d811d74",
+  "time" : {
+    "start" : 1650341688212,
+    "stop" : 1650341688600,
+    "duration" : 388
+  },
+  "description" : "发消息接口",
+  "descriptionHtml" : "<p>发消息接口</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_class_fixture_TestCases",
+    "time" : {
+      "start" : 1650341685910,
+      "stop" : 1650341686258,
+      "duration" : 348
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "发消息接口",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发消息接口",
+      "time" : {
+        "start" : 1650341688212,
+        "stop" : 1650341688600,
+        "duration" : 388
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "args",
+        "value" : "'{\"to_user_id\":\"380\",\"msgType\":\"word\",\"content\":\"你好\"}'"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "57ba036ff1c918ff",
+      "name" : "log",
+      "source" : "57ba036ff1c918ff.txt",
+      "type" : "text/plain",
+      "size" : 58
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_class_fixture_TestCases::0",
+    "time" : {
+      "start" : 1650341690614,
+      "stop" : 1650341690615,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=17)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_03_message"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MLECP88"
+  }, {
+    "name" : "thread",
+    "value" : "3984-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "cases.test_03_message"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "args",
+    "value" : "'{\"to_user_id\":\"380\",\"msgType\":\"word\",\"content\":\"你好\"}'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=17)" ]
+  },
+  "source" : "3a2907b5a05f612f.json",
+  "parameterValues" : [ "'{\"to_user_id\":\"380\",\"msgType\":\"word\",\"content\":\"你好\"}'" ]
+}

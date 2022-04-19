@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_04_home.py:25 开始执行
+[32mINFO    [0m root:test_04_home.py:100 搜索内容不存在
+[32mINFO    [0m root:test_04_home.py:32 测试结束

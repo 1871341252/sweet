@@ -1,0 +1,129 @@
+{
+  "uid" : "97a6e1762b67ecda",
+  "name" : "动态删除接口",
+  "fullName" : "cases.test_02_dynamic.TestCases#test_dynamic_delete",
+  "historyId" : "834cc6933ec0646d209386339f5cedad",
+  "time" : {
+    "start" : 1650341685744,
+    "stop" : 1650341685907,
+    "duration" : 163
+  },
+  "description" : "删除动态接口",
+  "descriptionHtml" : "<p>删除动态接口</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_class_fixture_TestCases",
+    "time" : {
+      "start" : 1650341685379,
+      "stop" : 1650341685743,
+      "duration" : 364
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "删除动态接口",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "动态删除接口",
+      "time" : {
+        "start" : 1650341685744,
+        "stop" : 1650341685907,
+        "duration" : 163
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "args",
+        "value" : "'{\"posts_id\":post_id}'"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "56f76bfefa78daea",
+      "name" : "log",
+      "source" : "56f76bfefa78daea.txt",
+      "type" : "text/plain",
+      "size" : 174
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_class_fixture_TestCases::0",
+    "time" : {
+      "start" : 1650341685908,
+      "stop" : 1650341685908,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=11)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_02_dynamic"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MLECP88"
+  }, {
+    "name" : "thread",
+    "value" : "3984-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "cases.test_02_dynamic"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "args",
+    "value" : "'{\"posts_id\":post_id}'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=11)" ]
+  },
+  "source" : "97a6e1762b67ecda.json",
+  "parameterValues" : [ "'{\"posts_id\":post_id}'" ]
+}

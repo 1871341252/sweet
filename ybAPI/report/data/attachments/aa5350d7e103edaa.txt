@@ -1,1 +1,0 @@
-[32mINFO    [0m root:test_03_message.py:275 对方已真人认证

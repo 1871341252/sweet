@@ -1,0 +1,139 @@
+{
+  "uid" : "353b1b5d1e60a16a",
+  "name" : "签到",
+  "fullName" : "cases.test_04_home.TestCases#test_user_signinAdd",
+  "historyId" : "927af65049d06a8334d5044ad808e974",
+  "time" : {
+    "start" : 1650341682187,
+    "stop" : 1650341682403,
+    "duration" : 216
+  },
+  "description" : "签到",
+  "descriptionHtml" : "<p>签到</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 10004 == 0",
+  "statusTrace" : "self = <cases.test_04_home.TestCases object at 0x0000023284F76860>, args = 'None'\n\n    @pytest.mark.parametrize('args', [datalist[9][5]])\n    @pytest.mark.run(order=8)\n    @allure.step(title=\"签到\")\n    @allure.title(\"签到\")\n    def test_user_signinAdd(self,args):\n        \"\"\"签到\"\"\"\n        url=url_conf[0][1]+datalist[9][2]\n        # print(self.public_params)\n        res=requests.post(url,files=self.public_params,verify=False)\n        logging.info(res.json()[\"m\"])\n>       assert res.json()[\"c\"]==0\nE       assert 10004 == 0\n\ncases\\test_04_home.py:124: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_class_fixture_TestCases",
+    "time" : {
+      "start" : 1650341681631,
+      "stop" : 1650341682186,
+      "duration" : 555
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "签到",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 10004 == 0",
+    "statusTrace" : "self = <cases.test_04_home.TestCases object at 0x0000023284F76860>, args = 'None'\n\n    @pytest.mark.parametrize('args', [datalist[9][5]])\n    @pytest.mark.run(order=8)\n    @allure.step(title=\"签到\")\n    @allure.title(\"签到\")\n    def test_user_signinAdd(self,args):\n        \"\"\"签到\"\"\"\n        url=url_conf[0][1]+datalist[9][2]\n        # print(self.public_params)\n        res=requests.post(url,files=self.public_params,verify=False)\n        logging.info(res.json()[\"m\"])\n>       assert res.json()[\"c\"]==0\nE       assert 10004 == 0\n\ncases\\test_04_home.py:124: AssertionError",
+    "steps" : [ {
+      "name" : "签到",
+      "time" : {
+        "start" : 1650341682187,
+        "stop" : 1650341682403,
+        "duration" : 216
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert 10004 == 0\n",
+      "statusTrace" : "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\allure_commons\\_allure.py\", line 172, in impl\n    return func(*a, **kw)\n  File \"C:\\pyapp\\app\\ybAPI\\cases\\test_04_home.py\", line 124, in test_user_signinAdd\n    assert res.json()[\"c\"]==0\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "args",
+        "value" : "'None'"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "2c599bddf03e1e65",
+      "name" : "log",
+      "source" : "2c599bddf03e1e65.txt",
+      "type" : "text/plain",
+      "size" : 196
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_class_fixture_TestCases::0",
+    "time" : {
+      "start" : 1650341682409,
+      "stop" : 1650341682409,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=8)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_04_home"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MLECP88"
+  }, {
+    "name" : "thread",
+    "value" : "3984-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "cases.test_04_home"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "args",
+    "value" : "'None'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "run(order=8)" ]
+  },
+  "source" : "353b1b5d1e60a16a.json",
+  "parameterValues" : [ "'None'" ]
+}

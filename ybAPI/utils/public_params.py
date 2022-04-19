@@ -1,3 +1,4 @@
+from os import device_encoding
 from utils.get_sign import *
 from utils.get_token import *
 from utils.public_tools import *
@@ -16,16 +17,17 @@ class Public:
     #     self.code=code
 
     def get_userinfo(self):
-        access_token=Token().get_user_token(user_conf[0][1],user_conf[1][1])
-        sign_token=Sign().get_sign(access_token)
-        return access_token,sign_token
+        token_data=Token().get_user_token(user_conf[0][1],user_conf[1][1])
+        sign_token=Sign().get_sign(token_data[1])
+        return token_data,sign_token
 
     def public_params(self):
         """获取公共参数返回"""
         res_temp=self.get_userinfo()
         times=res_temp[1][0]
         sign=res_temp[1][1]
-        access_token=res_temp[0]
+        device_token=res_temp[0][0]
+        access_token=res_temp[0][1]
         public_params={
             'public_oaid':(None,'7dfc2dc3-8bc2-4092-8dfb-d38a9366b267'),
             'public_app_id':(None,'1'),
@@ -33,6 +35,7 @@ class Public:
             'public_app_version_code':(None,'30'),
             'public_android_id':(None,'9cef2d09b8f32ab0'),
             'public_app_os':(None,'Android'),
+            'public_device_token':(None,device_token),
             'shumei_device_id':(None,'BhN5EywFhYjb8pJXjD5UCAULN0ryV4BcxXX0okynGdUF+'),
             'timestamp':(None,times),
             'yuan_api_sign':(None,sign),

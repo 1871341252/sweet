@@ -1,9 +1,13 @@
 import requests
 import pytest
 import allure
+import urllib3
 from utils.log import logging
 from utils.get_sign import *
 from utils.yaml_tools import *
+
+# 屏蔽requests的警告
+urllib3.disable_warnings()
 
 get_sign=Sign()
 login_data=YamlHandler("./data_yaml/login.yaml").read_yaml()

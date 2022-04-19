@@ -1,12 +1,16 @@
 import requests
 import pytest
 import allure
+import urllib3
 from utils.log import logging
 from utils.get_sign import *
 from utils.get_token import *
 from utils.tools import *
 from utils.public_params import *
 from utils.public_tools import *
+
+# 屏蔽requests的警告
+urllib3.disable_warnings()
 
 datalist=  readexcle("./data/动态模块接口测试用例.xls","Cases")
 conf_temp=Tools().read_configure("public_conf/conf.ini")
@@ -20,7 +24,7 @@ class TestCases:
         logging.info("开始执行")
         print('\n开始执行')
         cls.public_params=Public().public_params()
-        return public_params
+        return cls.public_params
 
     @classmethod
     def teardown_class(cls):

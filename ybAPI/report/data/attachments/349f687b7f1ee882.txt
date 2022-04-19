@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_02_dynamic.py:20 开始执行
-[32mINFO    [0m root:test_02_dynamic.py:166 请求成功
-[32mINFO    [0m root:test_02_dynamic.py:27 测试结束

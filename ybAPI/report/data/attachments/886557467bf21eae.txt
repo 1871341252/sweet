@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_03_message.py:91 请求成功
-[32mINFO    [0m root:test_03_message.py:25 测试结束

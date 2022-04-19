@@ -1,1 +1,0 @@
-[32mINFO    [0m root:test_04_home.py:61 请求成功

@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_04_home.py:25 开始执行
+[32mINFO    [0m root:test_04_home.py:44 请求成功
+[32mINFO    [0m root:test_04_home.py:32 测试结束

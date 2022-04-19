@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_04_home.py:25 开始执行
+[32mINFO    [0m root:test_04_home.py:111 请求成功

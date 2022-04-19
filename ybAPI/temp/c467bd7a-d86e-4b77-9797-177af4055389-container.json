@@ -1,1 +1,0 @@
-{"uuid": "e66915ef-09f9-4141-93e7-780cdba68066", "befores": [{"name": "xunit_setup_class_fixture_TestCases", "status": "passed", "start": 1638262574777, "stop": 1638262575199}], "afters": [{"name": "xunit_setup_class_fixture_TestCases::0", "status": "passed", "start": 1638262575777, "stop": 1638262575777}], "start": 1638262574776, "stop": 1638262575777}

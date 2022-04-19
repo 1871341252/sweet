@@ -1,1 +1,0 @@
-[32mINFO    [0m root:test_03_message.py:18 开始执行

@@ -1,12 +1,16 @@
 import requests
 import pytest
 import allure
+import urllib3
 from utils.log import logging
 from utils.get_sign import *
 from utils.get_token import *
 from utils.tools import *
 from utils.public_params import *
 from utils.public_tools import *
+
+# 屏蔽requests的警告
+urllib3.disable_warnings()
 
 datalist=  readexcle("./data/首页模块接口测试用例.xls","Cases")
 conf_temp=Tools().read_configure("public_conf/conf.ini")
@@ -21,7 +25,7 @@ class TestCases:
         logging.info("开始执行")
         print('\n开始执行')
         cls.public_params=Public().public_params()
-        return public_params
+        return cls.public_params
 
     @classmethod
     def teardown_class(cls):
@@ -35,6 +39,7 @@ class TestCases:
     def test_profile_index(self,args):
         """首页信息"""
         url=url_conf[0][1]+datalist[0][2]
+        # print(self.public_params)
         res=requests.post(url,files=self.public_params,verify=False)
         logging.info(res.json()["m"])
         assert res.json()["c"]==0
@@ -46,6 +51,7 @@ class TestCases:
     def test_get_banner(self,args):
         """获取轮播图"""
         url=url_conf[0][1]+datalist[1][2]
+        print(self.public_params)
         res=requests.post(url,data=eval(args),files=self.public_params,verify=False)
         logging.info(res.json()["m"])
         assert res.json()["c"]==0
@@ -112,6 +118,7 @@ class TestCases:
     def test_user_signinAdd(self,args):
         """签到"""
         url=url_conf[0][1]+datalist[9][2]
+        # print(self.public_params)
         res=requests.post(url,files=self.public_params,verify=False)
         logging.info(res.json()["m"])
         assert res.json()["c"]==0

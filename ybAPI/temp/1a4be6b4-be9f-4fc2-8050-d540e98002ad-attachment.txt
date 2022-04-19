@@ -1,1 +1,0 @@
-[32mINFO    [0m root:test_02_dynamic.py:80 请求成功
