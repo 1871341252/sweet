@@ -1,0 +1,139 @@
+{
+  "uid" : "3c22c57abbc12b13",
+  "name" : "邀请真人认证接口",
+  "fullName" : "cases.test_03_message.TestCases#test_message_inviteRealCertification",
+  "historyId" : "1fe58b1d75492d9aca47f8b26888acf5",
+  "time" : {
+    "start" : 1653389412370,
+    "stop" : 1653389412567,
+    "duration" : 197
+  },
+  "description" : "邀请真人认证接口",
+  "descriptionHtml" : "<p>邀请真人认证接口</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 10004 == 0",
+  "statusTrace" : "self = <cases.test_03_message.TestCases object at 0x000002230D195358>, args = '{\"to_user_id\":\"380\"}'\n\n    @pytest.mark.parametrize('args', [datalist[21][5]])\n    @pytest.mark.run(order=18)\n    @allure.step(title=\"邀请真人认证接口\")\n    @allure.title(\"邀请真人认证接口\")\n    def test_message_inviteRealCertification(self,args):\n        \"\"\"邀请真人认证接口\"\"\"\n        logger.info(\"---- {} ----\".format(datalist[21][1]))\n        url=url_conf[0][1]+datalist[21][2]\n        res=requests.post(url,data=eval(args),files=self.public_params)\n        logger.info(res.json()[\"m\"])\n        if res.json()[\"c\"] != 0:\n            logger.info(args)\n            logger.info(\"接口结果为:{}\".format(res.json()))\n>       assert res.json()[\"c\"]==0\nE       assert 10004 == 0\n\nD:\\yb\\test\\cases\\test_03_message.py:304: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_class_fixture_TestCases",
+    "time" : {
+      "start" : 1653389411884,
+      "stop" : 1653389412370,
+      "duration" : 486
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "邀请真人认证接口",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 10004 == 0",
+    "statusTrace" : "self = <cases.test_03_message.TestCases object at 0x000002230D195358>, args = '{\"to_user_id\":\"380\"}'\n\n    @pytest.mark.parametrize('args', [datalist[21][5]])\n    @pytest.mark.run(order=18)\n    @allure.step(title=\"邀请真人认证接口\")\n    @allure.title(\"邀请真人认证接口\")\n    def test_message_inviteRealCertification(self,args):\n        \"\"\"邀请真人认证接口\"\"\"\n        logger.info(\"---- {} ----\".format(datalist[21][1]))\n        url=url_conf[0][1]+datalist[21][2]\n        res=requests.post(url,data=eval(args),files=self.public_params)\n        logger.info(res.json()[\"m\"])\n        if res.json()[\"c\"] != 0:\n            logger.info(args)\n            logger.info(\"接口结果为:{}\".format(res.json()))\n>       assert res.json()[\"c\"]==0\nE       assert 10004 == 0\n\nD:\\yb\\test\\cases\\test_03_message.py:304: AssertionError",
+    "steps" : [ {
+      "name" : "邀请真人认证接口",
+      "time" : {
+        "start" : 1653389412371,
+        "stop" : 1653389412566,
+        "duration" : 195
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert 10004 == 0\n",
+      "statusTrace" : "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\allure_commons\\_allure.py\", line 172, in impl\n    return func(*a, **kw)\n  File \"D:\\yb\\test\\cases\\test_03_message.py\", line 304, in test_message_inviteRealCertification\n    assert res.json()[\"c\"]==0\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "args",
+        "value" : "'{\"to_user_id\":\"380\"}'"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "c574cb24add13af5",
+      "name" : "log",
+      "source" : "c574cb24add13af5.txt",
+      "type" : "text/plain",
+      "size" : 609
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_class_fixture_TestCases::0",
+    "time" : {
+      "start" : 1653389412579,
+      "stop" : 1653389412579,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=18)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_03_message"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MLECP88"
+  }, {
+    "name" : "thread",
+    "value" : "6740-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "cases.test_03_message"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "args",
+    "value" : "'{\"to_user_id\":\"380\"}'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "run(order=18)" ]
+  },
+  "source" : "3c22c57abbc12b13.json",
+  "parameterValues" : [ "'{\"to_user_id\":\"380\"}'" ]
+}

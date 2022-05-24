@@ -1,0 +1,129 @@
+{
+  "uid" : "a393819cb54af9a",
+  "name" : "打招呼接口",
+  "fullName" : "cases.test_03_message.TestCases#test_message_sayHi",
+  "historyId" : "8cea19f261c1b7ee3a5292291679b87b",
+  "time" : {
+    "start" : 1653389377344,
+    "stop" : 1653389382539,
+    "duration" : 5195
+  },
+  "description" : "打招呼接口",
+  "descriptionHtml" : "<p>打招呼接口</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_class_fixture_TestCases",
+    "time" : {
+      "start" : 1653389376874,
+      "stop" : 1653389377343,
+      "duration" : 469
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "打招呼接口",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "打招呼接口",
+      "time" : {
+        "start" : 1653389377344,
+        "stop" : 1653389382539,
+        "duration" : 5195
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "args",
+        "value" : "'{\"to_user_id\":\"380\",\"say_hi_content\":\"HelloWorld\"}'"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "b105e6fd78200123",
+      "name" : "log",
+      "source" : "b105e6fd78200123.txt",
+      "type" : "text/plain",
+      "size" : 223
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_class_fixture_TestCases::0",
+    "time" : {
+      "start" : 1653389393066,
+      "stop" : 1653389393066,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=16)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_03_message"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MLECP88"
+  }, {
+    "name" : "thread",
+    "value" : "6740-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "cases.test_03_message"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "args",
+    "value" : "'{\"to_user_id\":\"380\",\"say_hi_content\":\"HelloWorld\"}'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=16)" ]
+  },
+  "source" : "a393819cb54af9a.json",
+  "parameterValues" : [ "'{\"to_user_id\":\"380\",\"say_hi_content\":\"HelloWorld\"}'" ]
+}

@@ -1,0 +1,3 @@
+[32mINFO    [0m log:test_03_message.py:24 *************** 开始执行用例 ***************
+[32mINFO    [0m log:test_03_message.py:312 ---- 常用语列表接口 ----
+[32mINFO    [0m log:test_03_message.py:315 请求成功

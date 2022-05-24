@@ -1,0 +1,129 @@
+{
+  "uid" : "ace22fca8718e974",
+  "name" : "动态评论接口",
+  "fullName" : "cases.test_02_dynamic.TestCases#test_dynamic_Comment",
+  "historyId" : "6e978e1fbe1e4d17e9b0112f7a845a87",
+  "time" : {
+    "start" : 1653389350804,
+    "stop" : 1653389351125,
+    "duration" : 321
+  },
+  "description" : "动态评论接口",
+  "descriptionHtml" : "<p>动态评论接口</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_class_fixture_TestCases",
+    "time" : {
+      "start" : 1653389350400,
+      "stop" : 1653389350803,
+      "duration" : 403
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "动态评论接口",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "动态评论接口",
+      "time" : {
+        "start" : 1653389350804,
+        "stop" : 1653389351125,
+        "duration" : 321
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "args",
+        "value" : "'{\"page\":\"1\",\"pagesize\":\"20\",\"posts_id\":post_id}'"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "d109894b3cb14c2e",
+      "name" : "log",
+      "source" : "d109894b3cb14c2e.txt",
+      "type" : "text/plain",
+      "size" : 327
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_class_fixture_TestCases::0",
+    "time" : {
+      "start" : 1653389351126,
+      "stop" : 1653389351127,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=6)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_02_dynamic"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MLECP88"
+  }, {
+    "name" : "thread",
+    "value" : "6740-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "cases.test_02_dynamic"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "args",
+    "value" : "'{\"page\":\"1\",\"pagesize\":\"20\",\"posts_id\":post_id}'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=6)" ]
+  },
+  "source" : "ace22fca8718e974.json",
+  "parameterValues" : [ "'{\"page\":\"1\",\"pagesize\":\"20\",\"posts_id\":post_id}'" ]
+}

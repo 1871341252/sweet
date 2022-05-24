@@ -1,0 +1,2 @@
+[32mINFO    [0m log:test_04_home.py:301 ---- 富豪榜接口 ----
+[32mINFO    [0m log:test_04_home.py:304 请求成功

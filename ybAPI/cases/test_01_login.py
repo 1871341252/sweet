@@ -62,3 +62,15 @@ class TestCases:
         access_token=str(access_token_temp.json()["d"]["access_token"])
         logging.info(access_token_temp.json()["m"])
         assert access_token_temp.json()["c"]==0
+
+    # @pytest.mark.run(order=2)
+    # @allure.step(title="登录")
+    # @allure.title("登录")
+    # def test_regist(self):
+    #     url="https://api.test.xiangcaohuyu.com/v1/account/register/index"
+    #     data={
+    #         'phone':login_data["login"]["phone"],
+    #         'code':login_data["login"]["code"],
+    #         'category':login_data["login"]["category"],
+    #         'public_device_token':devices_token.json()["d"]["device_token"]
+    #     }

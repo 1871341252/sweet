@@ -1,0 +1,139 @@
+{
+  "uid" : "54969bdfb230e95c",
+  "name" : "搜索",
+  "fullName" : "cases.test_04_home.TestCases#test_user_search",
+  "historyId" : "b3c1ba7728e688363166d59136402d91",
+  "time" : {
+    "start" : 1653389352122,
+    "stop" : 1653389352317,
+    "duration" : 195
+  },
+  "description" : "搜索",
+  "descriptionHtml" : "<p>搜索</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 10004 == 0",
+  "statusTrace" : "self = <cases.test_04_home.TestCases object at 0x000002230D1ECE48>, args = '{\"content\":\"1\",\"page\":\"1\",\"pagesize\":\"20\"}'\n\n    @pytest.mark.parametrize('args', [datalist[5][5]])\n    @pytest.mark.run(order=6)\n    @allure.step(title=\"搜索\")\n    @allure.title(\"搜索\")\n    def test_user_search(self,args):\n        \"\"\"搜索\"\"\"\n        logger.info(\"---- {} ----\".format(datalist[5][1]))\n        url=url_conf[0][1]+datalist[5][2]\n        res=requests.post(url,data=eval(args),files=self.public_params,verify=False)\n        logger.info(res.json()[\"m\"])\n        if res.json()[\"c\"] != 0:\n            logger.info(args)\n            logger.info(\"接口结果为:{}\".format(res.json()))\n>       assert res.json()[\"c\"]==0\nE       assert 10004 == 0\n\ncases\\test_04_home.py:138: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_class_fixture_TestCases",
+    "time" : {
+      "start" : 1653389351647,
+      "stop" : 1653389352121,
+      "duration" : 474
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "搜索",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 10004 == 0",
+    "statusTrace" : "self = <cases.test_04_home.TestCases object at 0x000002230D1ECE48>, args = '{\"content\":\"1\",\"page\":\"1\",\"pagesize\":\"20\"}'\n\n    @pytest.mark.parametrize('args', [datalist[5][5]])\n    @pytest.mark.run(order=6)\n    @allure.step(title=\"搜索\")\n    @allure.title(\"搜索\")\n    def test_user_search(self,args):\n        \"\"\"搜索\"\"\"\n        logger.info(\"---- {} ----\".format(datalist[5][1]))\n        url=url_conf[0][1]+datalist[5][2]\n        res=requests.post(url,data=eval(args),files=self.public_params,verify=False)\n        logger.info(res.json()[\"m\"])\n        if res.json()[\"c\"] != 0:\n            logger.info(args)\n            logger.info(\"接口结果为:{}\".format(res.json()))\n>       assert res.json()[\"c\"]==0\nE       assert 10004 == 0\n\ncases\\test_04_home.py:138: AssertionError",
+    "steps" : [ {
+      "name" : "搜索",
+      "time" : {
+        "start" : 1653389352122,
+        "stop" : 1653389352317,
+        "duration" : 195
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert 10004 == 0\n",
+      "statusTrace" : "  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\allure_commons\\_allure.py\", line 172, in impl\n    return func(*a, **kw)\n  File \"C:\\pyapp\\app\\ybAPI\\cases\\test_04_home.py\", line 138, in test_user_search\n    assert res.json()[\"c\"]==0\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "args",
+        "value" : "'{\"content\":\"1\",\"page\":\"1\",\"pagesize\":\"20\"}'"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "24e083a5b4a0fcd1",
+      "name" : "log",
+      "source" : "24e083a5b4a0fcd1.txt",
+      "type" : "text/plain",
+      "size" : 581
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_class_fixture_TestCases::0",
+    "time" : {
+      "start" : 1653389352353,
+      "stop" : 1653389352354,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=6)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_04_home"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MLECP88"
+  }, {
+    "name" : "thread",
+    "value" : "6740-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "cases.test_04_home"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "args",
+    "value" : "'{\"content\":\"1\",\"page\":\"1\",\"pagesize\":\"20\"}'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "run(order=6)" ]
+  },
+  "source" : "54969bdfb230e95c.json",
+  "parameterValues" : [ "'{\"content\":\"1\",\"page\":\"1\",\"pagesize\":\"20\"}'" ]
+}

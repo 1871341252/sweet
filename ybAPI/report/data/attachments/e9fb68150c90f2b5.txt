@@ -1,0 +1,3 @@
+[32mINFO    [0m log:test_04_home.py:25 *************** 开始执行用例 ***************
+[32mINFO    [0m log:test_04_home.py:316 ---- 女神榜接口 ----
+[32mINFO    [0m log:test_04_home.py:319 请求成功

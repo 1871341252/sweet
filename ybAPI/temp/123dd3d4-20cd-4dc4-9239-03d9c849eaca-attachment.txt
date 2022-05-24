@@ -1,0 +1,2 @@
+[32mINFO    [0m log:test_03_message.py:265 ---- 打招呼接口 ----
+[32mINFO    [0m log:test_03_message.py:269 请求成功

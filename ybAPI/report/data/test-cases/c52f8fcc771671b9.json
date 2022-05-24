@@ -1,0 +1,129 @@
+{
+  "uid" : "c52f8fcc771671b9",
+  "name" : "首页离线列表",
+  "fullName" : "cases.test_04_home.TestCases#test_offlineRecommendList",
+  "historyId" : "cee4c4cef1c3c5505567d08f8f216052",
+  "time" : {
+    "start" : 1653389375516,
+    "stop" : 1653389375699,
+    "duration" : 183
+  },
+  "description" : "首页离线列表",
+  "descriptionHtml" : "<p>首页离线列表</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_class_fixture_TestCases",
+    "time" : {
+      "start" : 1653389375069,
+      "stop" : 1653389375515,
+      "duration" : 446
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "首页离线列表",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "首页离线列表",
+      "time" : {
+        "start" : 1653389375516,
+        "stop" : 1653389375698,
+        "duration" : 182
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "args",
+        "value" : "'{\"page\":\"1\",\"pagesize\":\"20\",\"real_certification_flg\":\"M\",\n\"user_gender\":\"male\",\"user_birth\":\"1\"}'"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "dcba383004a9e42f",
+      "name" : "log",
+      "source" : "dcba383004a9e42f.txt",
+      "type" : "text/plain",
+      "size" : 315
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_class_fixture_TestCases::0",
+    "time" : {
+      "start" : 1653389375700,
+      "stop" : 1653389375700,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=14)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_04_home"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MLECP88"
+  }, {
+    "name" : "thread",
+    "value" : "6740-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "cases.test_04_home"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "args",
+    "value" : "'{\"page\":\"1\",\"pagesize\":\"20\",\"real_certification_flg\":\"M\",\n\"user_gender\":\"male\",\"user_birth\":\"1\"}'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=14)" ]
+  },
+  "source" : "c52f8fcc771671b9.json",
+  "parameterValues" : [ "'{\"page\":\"1\",\"pagesize\":\"20\",\"real_certification_flg\":\"M\",\n\"user_gender\":\"male\",\"user_birth\":\"1\"}'" ]
+}

@@ -1,0 +1,6 @@
+[32mINFO    [0m log:test_03_message.py:24 *************** 开始执行用例 ***************
+[32mINFO    [0m log:test_03_message.py:297 ---- 邀请真人认证接口 ----
+[32mINFO    [0m log:test_03_message.py:300 对方已真人认证
+[32mINFO    [0m log:test_03_message.py:302 {"to_user_id":"380"}
+[32mINFO    [0m log:test_03_message.py:303 接口结果为:{'c': 10004, 'm': '对方已真人认证', 'n': '/v1/user/message/inviteRealCertification', 'd': {}, 't': '1653389411', 'r': '32.327890396118ms'}
+[32mINFO    [0m log:test_03_message.py:31 *************** 结束执行用例 ***************

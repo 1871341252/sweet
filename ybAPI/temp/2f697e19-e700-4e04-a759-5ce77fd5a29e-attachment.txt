@@ -1,0 +1,3 @@
+[32mINFO    [0m log:test_04_home.py:25 *************** 开始执行用例 ***************
+[32mINFO    [0m log:test_04_home.py:146 ---- 亲密度排行榜接口 ----
+[32mINFO    [0m log:test_04_home.py:149 请求成功

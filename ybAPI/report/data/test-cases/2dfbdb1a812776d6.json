@@ -1,0 +1,129 @@
+{
+  "uid" : "2dfbdb1a812776d6",
+  "name" : "举报动态",
+  "fullName" : "cases.test_02_dynamic.TestCases#test_dynamic_DeleteMessage",
+  "historyId" : "fed3af80b353823a4e348e5c46da681c",
+  "time" : {
+    "start" : 1653389356224,
+    "stop" : 1653389356523,
+    "duration" : 299
+  },
+  "description" : "举报动态",
+  "descriptionHtml" : "<p>举报动态</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_class_fixture_TestCases",
+    "time" : {
+      "start" : 1653389355788,
+      "stop" : 1653389356223,
+      "duration" : 435
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "举报动态",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "举报动态",
+      "time" : {
+        "start" : 1653389356224,
+        "stop" : 1653389356523,
+        "duration" : 299
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "args",
+        "value" : "'{\"posts_id\":post_id,\"report_reason\":\"test\",\"reason_details\":\"test'\",\n\"reason_details_imgs\":\"test\"}'"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "96468972eddc2c36",
+      "name" : "log",
+      "source" : "96468972eddc2c36.txt",
+      "type" : "text/plain",
+      "size" : 321
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_class_fixture_TestCases::0",
+    "time" : {
+      "start" : 1653389356524,
+      "stop" : 1653389356524,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=9)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_02_dynamic"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MLECP88"
+  }, {
+    "name" : "thread",
+    "value" : "6740-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "cases.test_02_dynamic"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "args",
+    "value" : "'{\"posts_id\":post_id,\"report_reason\":\"test\",\"reason_details\":\"test'\",\n\"reason_details_imgs\":\"test\"}'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=9)" ]
+  },
+  "source" : "2dfbdb1a812776d6.json",
+  "parameterValues" : [ "'{\"posts_id\":post_id,\"report_reason\":\"test\",\"reason_details\":\"test'\",\n\"reason_details_imgs\":\"test\"}'" ]
+}

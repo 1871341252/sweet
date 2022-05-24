@@ -1,0 +1,2 @@
+[32mINFO    [0m log:test_03_message.py:327 ---- 增加常用语接口 ----
+[32mINFO    [0m log:test_03_message.py:330 请求成功

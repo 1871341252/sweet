@@ -1,0 +1,2 @@
+[32mINFO    [0m log:test_03_message.py:342 ---- 删除常用语接口 ----
+[32mINFO    [0m log:test_03_message.py:345 请求成功

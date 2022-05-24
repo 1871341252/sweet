@@ -1,0 +1,3 @@
+[32mINFO    [0m log:test_03_message.py:24 *************** 开始执行用例 ***************
+[32mINFO    [0m log:test_03_message.py:281 ---- 发消息接口 ----
+[32mINFO    [0m log:test_03_message.py:285 请求成功

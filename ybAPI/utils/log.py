@@ -1,36 +1,32 @@
-import logging
+import logging, time, os
 
-# 第一步，创建日志记录器
-# 1，创建一个日志记录器logger
-logger = logging.getLogger()
-# 2，设置日志记录器的日志级别，这里的日志级别是日志记录器能记录到的最低级别，区别于后面Handler里setLevel的日志级别
-logger.setLevel(logging.INFO)
-# logger.setLevel(logging.DEBUG)
+BASE_PATH = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+# 定义日志文件路径
+LOG_PATH = os.path.join(BASE_PATH, "log")
+if not os.path.exists(LOG_PATH):
+    os.mkdir(LOG_PATH)
 
-# 第二步，创建日志处理器Handler。这里创建一个Handler，用于将日志写入文件
-# 3，创建一个Handler，用于写入日志文件，日志文件的路径自行定义
-logFile = 'logs/log.txt'
-fh = logging.FileHandler(logFile, mode='a', encoding='utf-8')
-# 4，设置保存至文件的日志等级
-fh.setLevel(logging.INFO)
+class Logger():
 
-# 第三步，定义Handler的输出格式
-# 5，日志输出格式定义如下
-format= logging.Formatter('%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s')
-# 6，设置 写入日志文件的Handler 的日志格式
-fh.setFormatter(format)
+    def __init__(self):
+        self.logname = os.path.join(LOG_PATH, "{}.log".format(time.strftime("%Y%m%d")))
+        self.logger = logging.getLogger("log")
+        self.logger.setLevel(logging.DEBUG)
 
-# 第四步，将Handler添加至日志记录器logger里
-logger.addHandler(fh)
+        self.formater = logging.Formatter(
+            '[%(asctime)s][%(filename)s %(lineno)d][%(levelname)s]: %(message)s')
 
-# 同样的，创建一个Handler用于控制台输出日志
-# ch = logging.StreamHandler()
-# ch.setLevel(logging.INFO)
-# ch.setFormatter(format)
-# logger.addHandler(ch)
+        self.filelogger = logging.FileHandler(self.logname, mode='a', encoding="UTF-8")
+        self.console = logging.StreamHandler()
+        self.console.setLevel(logging.DEBUG)
+        self.filelogger.setLevel(logging.DEBUG)
+        self.filelogger.setFormatter(self.formater)
+        self.console.setFormatter(self.formater)
+        self.logger.addHandler(self.filelogger)
+        self.logger.addHandler(self.console)
 
-# 输出日志
-# logger.info("This is info message")
-# logger.warning("This is warning message")
-# logger.error("This is error message")
-# logger.critical("This is critical message")
+logger = Logger().logger
+
+# if __name__ == '__main__':
+#     logger.info("---测试开始---")
+#     logger.debug("---测试结束---")

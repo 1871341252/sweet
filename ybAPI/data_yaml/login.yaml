@@ -2,3 +2,9 @@ login:
     phone: "13999990002"
     code: "123456"
     category: "phone"
+
+regist:
+    picture: "https://yuanban-1303879345.file.myqcloud.com/static/image/male.png"
+    nickname: "就是考试的"
+    birthday: "2000-01-01"
+    gender: "male"

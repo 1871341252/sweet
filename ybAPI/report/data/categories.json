@@ -7,91 +7,39 @@
       "name" : "AssertionError: assert 10004 == 0",
       "children" : [ {
         "name" : "搜索",
-        "uid" : "4f116c010ea39b4c",
+        "uid" : "54969bdfb230e95c",
         "parentUid" : "03063e31fb03a48323f8fac4c597911b",
         "status" : "failed",
         "time" : {
-          "start" : 1650341678147,
-          "stop" : 1650341678331,
-          "duration" : 184
+          "start" : 1653389352122,
+          "stop" : 1653389352317,
+          "duration" : 195
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "'{\"content\":\"测试\",\"page\":\"1\",\"pagesize\":\"20\"}'" ]
+        "parameters" : [ "'{\"content\":\"1\",\"page\":\"1\",\"pagesize\":\"20\"}'" ]
       }, {
         "name" : "签到",
-        "uid" : "353b1b5d1e60a16a",
+        "uid" : "9fc35d992bec0889",
         "parentUid" : "03063e31fb03a48323f8fac4c597911b",
         "status" : "failed",
         "time" : {
-          "start" : 1650341682187,
-          "stop" : 1650341682403,
-          "duration" : 216
+          "start" : 1653389355628,
+          "stop" : 1653389355774,
+          "duration" : 146
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'None'" ]
       }, {
-        "name" : "打招呼接口",
-        "uid" : "5172e4f3b4af0208",
-        "parentUid" : "03063e31fb03a48323f8fac4c597911b",
-        "status" : "failed",
-        "time" : {
-          "start" : 1650341687805,
-          "stop" : 1650341687977,
-          "duration" : 172
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'{\"to_user_id\":\"380\",\"say_hi_content\":\"哈哈哈\"}'" ]
-      }, {
-        "name" : "打招呼接口",
-        "uid" : "2cc7963e9081114c",
-        "parentUid" : "03063e31fb03a48323f8fac4c597911b",
-        "status" : "failed",
-        "time" : {
-          "start" : 1650341687987,
-          "stop" : 1650341688201,
-          "duration" : 214
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'{\"to_user_id\":\"380\",\"say_hi_content\":\"123456\"}'" ]
-      }, {
-        "name" : "发消息接口",
-        "uid" : "85fd4691d91b7212",
-        "parentUid" : "03063e31fb03a48323f8fac4c597911b",
-        "status" : "failed",
-        "time" : {
-          "start" : 1650341688603,
-          "stop" : 1650341688784,
-          "duration" : 181
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'{\"to_user_id\":\"380\",\"msgType\":\"word\",\"content\":\"Word\"}'" ]
-      }, {
-        "name" : "发消息接口",
-        "uid" : "3abe78fcf77dc6a9",
-        "parentUid" : "03063e31fb03a48323f8fac4c597911b",
-        "status" : "failed",
-        "time" : {
-          "start" : 1650341688794,
-          "stop" : 1650341688979,
-          "duration" : 185
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'{\"to_user_id\":\"380\",\"msgType\":\"word\",\"content\":\"666666\"}'" ]
-      }, {
         "name" : "邀请真人认证接口",
-        "uid" : "8658a81c59b128f0",
+        "uid" : "3c22c57abbc12b13",
         "parentUid" : "03063e31fb03a48323f8fac4c597911b",
         "status" : "failed",
         "time" : {
-          "start" : 1650341688991,
-          "stop" : 1650341689200,
-          "duration" : 209
+          "start" : 1653389412370,
+          "stop" : 1653389412567,
+          "duration" : 197
         },
         "flaky" : false,
         "newFailed" : false,

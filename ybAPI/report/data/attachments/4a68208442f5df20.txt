@@ -1,0 +1,2 @@
+[32mINFO    [0m log:test_02_dynamic.py:41 ---- 动态列表接口 ----
+[32mINFO    [0m log:test_02_dynamic.py:44 请求成功
